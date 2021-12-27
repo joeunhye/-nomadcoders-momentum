@@ -1,0 +1,60 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*Common*/
+html, body {width: 100%; height: 100%; margin:0; font-family: 'Noto Sans KR', sans-serif;background-size: cover;overflow: hidden;}
+input, button {font-family: 'Noto Sans KR', sans-serif;}
+input::placeholder {font-size:15px;color:#000 }
+input:-ms-input-placeholder {font-size:15px;color:#000}
+input::-webkit-input-placeholder {font-size:15px;color:#000}
+input:-moz-placeholder {font-size:15px;color:#000}
+.wrap {display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top:0; left:0; bottom:0; right:0; width: 500px; height: 300px; margin: auto;}
+.hidden {display: none;}
+
+/*Top-menu*/
+#top-menu {display: flex;justify-content: flex-end; align-items: center;color:#fff;}
+#top-menu > span {padding: 0 10px;}
+#top-menu .weather-icon {padding: 0; font-size: 22px;}
+
+/*todo list*/
+.todoBtn {padding: 0 10px 0 0; text-decoration: none; color: #fff;}
+.todo { opacity: 0; z-index: -1; width: 300px; position: absolute; top: 50px; right: 10px; padding: 15px; color: #282828; background-color: #fff; border-radius: 10px; transition: .3s all ease; }
+.todo.on {opacity: 1; z-index: 1;}
+.todo:before {content: ''; position: absolute;top: -8px;right: 25px;border-bottom: 8px solid #fff; border-left: 8px solid transparent; border-right: 8px solid transparent;}
+.todo p {margin:0;}
+.todo input[type="text"] {border: none; border-bottom: 1px solid #ddd;}
+.todo input::placeholder {font-size:15px;color:#ddd}
+.todo input:-ms-input-placeholder {font-size:15px;color:#ddd}
+.todo input::-webkit-input-placeholder {font-size:15px;color:#ddd}
+.todo input:-moz-placeholder {font-size:15px;color:#ddd}
+#todo-form {display: flex;flex-direction: column;}
+#todo-list {padding:0; color: #282828;}
+#todo-list li {list-style-type: none;}
+#todo-list li.on input[type="checkbox"] {}
+#todo-list li span {margin:0 0 0 6px;font-weight: 500;}
+#todo-list li.on span {text-decoration: line-through; color:#ddd}
+#todo-list button {float:right; padding: 0; border:none; background: none; cursor: pointer;}
+
+/*Greeting*/
+#greeting {margin: 0 0 5px 0;font-size: 16px; font-weight: 300;color: #fff; opacity: 0.5;}
+#greeting.on {font-size: 50px;font-weight: 300;}
+
+/*Login form*/
+.form-wrap {}
+#login-form {}
+#login-form input[type="text"] {width: 500px;height: 45px;padding: 0 15px;background: none; border: none; border-radius: 50px;background-color: rgba(255,255,255,0.5); box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 10%);}
+
+/*Clock*/
+.clock-cont {display: flex;align-items: center;}
+#clock {margin: 0;font-size: 150px;font-weight: 500; color: #fff;}
+.seconds {display: flex;flex-direction: column;align-items: center;height: 100px;}
+.seconds p {margin: 0 0 0 20px;font-size: 40px;color: #fff;opacity: 0.5;}
+.seconds p.time-second {font-size: 50px;}
+
+/*Date*/
+#date {font-size: 30px;font-weight: 500;color: #fff;}
+
+/*Quote*/
+#quote {display: flex;justify-content: center;align-items: center;position: absolute;bottom: 0px; width: 100%; padding: 5px 0; text-align: center; font-style: italic;color: #fff;background-color: rgba(0,0,0,0.2);}
+#quote p {margin: 0 20px 0 0;}
+#quote span {font-size: 12px;}

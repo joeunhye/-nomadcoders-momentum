@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/randomBg.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/quotes.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/todo.js"></script>
+</head>
+<body>
+    <!--Weather-->
+    <div id="top-menu">
+        <span class="weather-icon"></span>
+        <span class="weather"></span>
+        <span class="temp"></span>
+        <span class="city"></span>
+        <a href="javascript:void(0);" class="todoBtn">📌To Do List</a>
+
+        <!--todo list-->
+        <div class="todo">
+            <p>📝 Today's To Do List</p>
+            <ul id="todo-list"></ul>
+            <form action="" id="todo-form">
+                <input type="text" placeholder="Write a To Do and press Enter" required />
+            </form> 
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- Greeting-->
+        <h1 id="greeting">What Your Name? <strong></strong></h1>
+
+        <!-- 계정명 입력폼--> 
+        <form id="login-form">
+            <input type="text" placeholder="Write your name" />
+        </form>
+
+        <!--Clock-->
+        <div class="clock-cont">
+            <p id="clock"></p>
+            <div class="seconds">
+                <p class="time-period"></p>
+                <p class="time-second"></p>
+            </div>
+        </div>
+
+        <!--Date-->
+        <span id="date"></span>
+    </div>
+    
+    <!--Quote-->
+    <div id="quote">
+        <p>werwerwerwer</p>
+        <span>wer</span>
+    </div>
+
+</body>
+</html>
